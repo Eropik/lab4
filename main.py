@@ -1,23 +1,27 @@
-class Lst:
-    length=0
-    lst=[]
-    def __init__(self):
-        print("List constr.")
-        lst=[]
-        length=0
+ch=int(input("Меню для 4 лабораторной\n Выберите задачу(0 exit): "))
+match ch:
+    case 1:
+        class Lst:
+            length = 0
+            lst = []
 
-    def inp_lst(self,lst):
+            def __init__(self):
+                print("List constr.")
+                lst = []
+                length = 0
 
-        Lst.lst = input("enter ur List: ")
+            def inp_lst(self, lst):
+                Lst.lst = input("enter ur List: ")
 
-    def len_lst(self,lst):
-        Lst.length=len(Lst.lst)
-        print("len of ur List= ", Lst.length)
+            def len_lst(self, lst):
+                Lst.length = len(Lst.lst)
+                print("len of ur List= ", Lst.length)
 
-    def ret_lst(self,lst):
-        print("ur returned List:",lst[::-1])
+            def ret_lst(self, lst):
+                print("ur returned List:", lst[::-1])
 
 
-l=Lst()
-l.inp_lst(l)
-l.len_lst(l)
+        l = Lst()
+        l.inp_lst(l)
+        l.len_lst(l)
+
