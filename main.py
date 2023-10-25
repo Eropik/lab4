@@ -24,4 +24,38 @@ match ch:
         l = Lst()
         l.inp_lst(l)
         l.len_lst(l)
+    case 2:
+
+        class Country:
+            name=""
+            capital = ""
+            square = 0.0
+            people = 0
+
+            def __init__(self):
+                name="None"
+                capital = "None"
+                square = 0.0
+                people = 0
+
+        def square_search(self, c=Country()):
+            cap=int("input country's square u search: ")
+            if c.capital==cap:
+                print("Searched by square country: ", c.name)
+
+
+        def people_search (self, c=Country()):
+            peop = int("input country's people u search: ")
+            if c.people == peop:
+                print("Searched by people country: ", c.name)
+
+
+
+
+
+
+
+
+
+
 
